@@ -5,8 +5,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 
 import * as source from './index';
 import { routes } from './routes';
-import { SharedModule } from './shared/shared.module';
-import { ApisModule } from './apis/apis.module';
 
 @Module({
    imports: [
@@ -19,8 +17,8 @@ import { ApisModule } from './apis/apis.module';
       RouterModule.register(routes),
 
       // modules
-      ApisModule,
-      SharedModule,
+      source.ApisModule,
+      source.SharedModule,
       source.CatalogoModule,
       source.SeguridadModule,
    ]
