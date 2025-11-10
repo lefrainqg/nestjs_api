@@ -32,8 +32,8 @@ Documentación framework [deployment documentation](https://docs.nestjs.com/depl
 
 ### Script: db_temp
  Estructura para PostgreSQL con dos esquemas:
-   - seguridad  → Contiene tablas de roles y asignaciones de personas a roles.
-   - catalogo   → Contiene la tabla de períodos académicos, con relación a seguridad.
+   - seguridad  → Contiene tablas: tb_rol, tb_persona_rol.
+   - catalogo   → Contiene la tabla: tb_periodo.
 
 ### 1. Create db
 ```bash
